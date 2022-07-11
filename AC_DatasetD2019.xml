@@ -1,87 +1,61 @@
-<?xml version="1.0" standalone="yes"?>
-<feed xml:lang="it" xsi:schemaLocation="http://www.w3.org/2005/Atom http://inspire-geoportal.ec.europa.eu/schemas/inspire/atom/1.0/atom.xsd" xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    
-   
-    <title type="text">
-        AC.DatasetD.Stations
-    </title>
-    
-   
-    <subtitle type="text">
-        AQD Stazioni di monitoraggio (Stations)
-        Dataset delle stazioni di monitoraggio della Qualità dell'Aria partede del flusso D previsto --dall'Art. 3 e 4-- della Directiva 2004/107/EC per la valutazione e la gestione della qualità dell'Aria in Italia. 
-        Il dataset è relativo alle valutazioni dell'anno 2019. 
-    </subtitle>
-    
-   
-    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD.xml" hreflang="it" rel="self" title="link dataset" type="application/atom+xml"/>
-    <link href="https://catalogosgi.isprambiente.it/geoportal2/rest/document?id=ispra_rm%3AAQD2019_SVD" hreflang="it" rel="describedby" title="AC.AQD_datasetB" type="application/xml"/>
-    
-    <link href="https://inspire.ec.europa.eu/applicationschema/ac-mfr" hreflang="en" rel="describedby" title="Condizioni atmosferiche e elementi geografici meteorologici" type="text/html"/>
-    <link href="http://dd.eionet.europa.eu/vocabulary/aq/zonetype/" hreflang="en" rel="describedby" title="AQD - AQ Assessment and Management Zone Type" type="text/html"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../ATOMDataView.xsl"?>
+<!--
++ Questo è un servizio Atom Feed di ISPRA erogato dal SINA. ATTENZIONE si prega di non rimuovere  
++ il commentonecessario alla corretta visualizzazione del file nei browser. L'implementazione del 
++ servizio pre-definito di download per INSPIRE per i datasets.
++ 
++ La funzione del foglio di stile associato è quella di rendere la visualizzazione del feed nella
++ piattaforma SINA nel modo corretto.
++ 
++ Il servio di Atom e i dataset associati sono implementati in base alle linee guida tecniche 
++ di INSPIRE (Technical_Guidance_Download_Services_v3.1.pdf), per cui si prega di riferisri a tali
++ linee guida per le specifiche tecniche del servizio.
+-->
 
-    <link href="https://localhost/OpenData/atom/inspire/service/AQDdownload.xml" hreflang="it" rel="up" title="ISPRA Download AQD" type="application/atom+xml"/>
-     
-    <id>
-        https://localhost/atom/inspire/dataset/AC_DatasetD.xml
-    </id>
-    
-    <rights type="text">
-        http://creativecommons.org/licenses/by/4.0/
-    </rights>
-    
-    <updated>
-        2021-12-1
-    </updated>
-    
-    <author>
-        <email>
-            sinaservice@isprambiente.it
-        </email>
-        <name>
-            ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale
-        </name>
-        <uri>
-            https://sinacloud.isprambiente.it/portal
-        </uri>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xml:lang="en">
+  <!-- feed title -->
+  <title xml:lang="en">AC.Monitoring_Stations (AQD Dataflow D - stazioni monitoraggio)</title>
+  <!-- feed subtitle -->
+  <subtitle xml:lang="en">QD Stazioni di monitoraggio (Stations)
+        Dataset delle stazioni di monitoraggio della Qualità dell'Aria partede del flusso D previsto --dall'Art. 3 e 4-- della Directiva 2004/107/EC per la valutazione e la gestione della qualità dell'Aria in Italia. 
+        Il dataset è relativo alle valutazioni dell'anno 2020.</subtitle>
+  <link href="https://inspire.ec.europa.eu/theme/ac" hreflang="en" rel="describedby" title="Condizioni atmosferiche" type="text/html"/>
+  <link href="http://dd.eionet.europa.eu/vocabulary/aq/stationclassification/" hreflang="en" rel="describedby" title="AQD - AQ monitoring station classification" type="text/html"/>
+  <link href="http://dd.eionet.europa.eu/vocabulary/aq/networktype/" hreflang="en" rel="describedby" title="AQD - AQ monitoring Network level" type="text/html"/>
+  <!-- self-referencing link to this feed -->
+  <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml" rel="self" type="application/atom+xml" hreflang="it" title="Il dataset stesso"/>
+  <!-- 'upward’ link to the corresponding download service feed -->
+  <link href="http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml" rel="up" type="application/atom+xml" hreflang="it" title="Servizio Atom di appartenenza"/>
+  <!-- identifier -->
+  <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml</id>
+  <!-- rights, access restrictions -->
+  <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+  <!-- date/time this feed was last updated -->
+  <updated>2020-09-010</updated>
+  <!-- author contact information -->
+  <author>
+      <email>sinaservice@isprambiente.it</email>
+      <name>ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale</name>
     </author>
-    <icon>http://localhost/OpenData/img/logosina.png</icon>
-    <logo>http://localhost/OpenData/img/logosina.png</logo>
-    
-   
-    <!-- EPSG 4258 -->
-    <entry>
-        <inspire_dls:spatial_dataset_identifier_code>ispra_rm:IT-AQDatasetD_01</inspire_dls:spatial_dataset_identifier_code>
-        <inspire_dls:spatial_dataset_identifier_namespace>https://sdi.isprambiente.it/registry/datasetid/</inspire_dls:spatial_dataset_identifier_namespace>
-        <category label="ETRS89-GRS80" term="http://www.opengis.net/def/crs/EPSG/0/4258"/>
-        <author>
-            <email>
-                sinaservice@isprambiente.it
-            </email>
-            <name>
-                ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale
-            </name>
-            <uri>
-                https://sinacloud.isprambiente.it/portal
-            </uri>
-        </author>
-        
-        <id>
-            http://localhost/OpenData/atom/download/AQD/AQD2019.zip
-        </id>
-        
-        <link href="https://catalogosgi.isprambiente.it/geoportalAdm2/rest/document?id=ispra_rm%3A20180707%3A2017_RAQDTB" hreflang="it" rel="describedby" title="AC.Stations" type="application/xml"/>
-        <link href="http://localhost/OpenData/atom/download/AQD/AQD2019.zip" hreflang="it" rel="alternate" title="AC.AQDdatasetD.Stations" type="application/x-gmz"/>
-        <rights type="text">
-            http://creativecommons.org/licenses/by/4.0/
-        </rights>
-        <summary type="html"><![CDATA[<div>
-        Questo servizio permette il Download del dataset relativo alle Stazioni di monitoraggio della Qualità dell'Aria in Italia nel anno 2019, concesso con licenza CC-BY 4.0 e scaricabile per il sistema di firerimento ETRS89 (EPSG4258) nei seguenti formati:</div>
-        <div>- <a href="http://localhost/OpenData/atom/download/AQD/AQD2019.gpkg">Geopackage AQD 2019</a></div>
-        <div>- <a href="http://localhost/OpenData/atom/download/AQD/AQD2019.zip">GML zip Dataset B 2019</a></div>
-        <div>- <a href="http://localhost/OpenData/atom/download/AQD/AQDdatasetB2019.csv">CSV Dataset B 2019</a></div>
-        <div>Per maggiori informazioni è possibile consultare <a href="https://sinacloud.isprambiente.it/portal/apps/experiencebuilder/experience/?draft=true&id=df677d20871d4383b34ce355e24f0598&page=page_38">l'applicazione di visualizzazione</a> dei dati della qualità dell'Aria.</div>]]>
-        </summary>
-        <title type="text">Dataset Stazioni di monitoraggio - AQD 2019 (Dataset D)</title>
-    </entry>
+  <!-- download the pre-defined dataset in GML format -->
+  <entry>
+    <title xml:lang="it">AQD Dataset D GML, ETRS89 (INSPIRE conformant)</title>
+    <link rel="alternate" href="http://localhost/OpenData/download/AQD/AQD.zip" type="application/zip" hreflang="it" title="ZIP file con GML in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258) del Dataset D 2019"/>
+    <link href="http://localhost/OpenData/download/AQD/AQD.zip" type="application/zip"></link>
+  <id>http://localhost/OpenData/download/AQD/AQD.zip" type="application/zip</id>
+    <updated>2020-09-010</updated>
+    <summary>File GML-ZIP armonizzato secondo AQD/IJNSPIRE del Dataset D previsto dall'Art. 6 per la valutazione e la gestione della qualità dell'Aria in Italia per l'anno 2020. Il file contiene i dati del 2019.</summary>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
+  <!-- download the pre-defined dataset in geopackage format -->
+  <entry>
+    <title xml:lang="it">AQD Dataset D Geopackage, ETRS89 (INSPIRE non conformant)</title>
+    <link rel="alternate" href="http://localhost/OpenData/download/AQD/AQD.gpkg" type="application/x-gpkg" hreflang="it" title="AQD Dataset D Geopackage in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258)(non INSPIRE conformant)"/>
+    <link href="hhttp://localhost/OpenData/download/AQD/AQD.gpkg"></link>
+  <id>http://localhost/OpenData/download/AQD/AQD.gpkg</id>
+    <updated>2020-09-010</updated>
+      <summary>File Geopackage non armonizzato del Dataset D previsto dall'Art. 6 per la valutazione e la gestione della qualità dell'Aria in Italia per l'anno 2020. Il file contiene i dati del 2019.</summary>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
 </feed>
