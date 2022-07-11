@@ -21,11 +21,11 @@
   <!-- links to metadata and alternative representations -->
   <link href="https://catalogosgi.isprambiente.it/geoportal2/rest/document?id=ispra_rm%3A001_RAQ_Dataflow_SVD" rel="describedby" type="application/vnd.ogc.csw.GetRecordByIdResponse_xml"/>
   <!-- selflink to this document -->
-  <link href="http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml" rel="self" type="application/atom+xml" hreflang="it" title="Documento stesso"/>
+  <link href="https://github.com/CipoCar/Atom-service/blob/main/AQD_Atom.xml" rel="self" type="application/atom+xml" hreflang="it" title="Documento stesso"/>
   <!-- links to the open search interface description of this download service -->
   <link href="https://catalogosgi.isprambiente.it/geoportal2/rest/find/document?searchText=Qualit%C3%A0%20dell%27Aria%20-%20Download&amp;max=1&amp;f=xml" rel="search" type="application/opensearchdescription+xml" hreflang="en" title="Open Search interface description of the ISPRA download service"/>
   <!-- identifier -->
-  <id>http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml</id>
+  <id>https://github.com/CipoCar/Atom-service/blob/main/AQD_Atom.xml</id>
   <!-- rights, access restrictions -->
   <rights>CC-BY 4.0</rights>
   <!-- date/time of last update of feed-->
