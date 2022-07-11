@@ -25,11 +25,11 @@
   <link href="http://dd.eionet.europa.eu/vocabulary/aq/samplingequipment/" hreflang="en" rel="describedby" title="AQD - AQ Sampling point equipment" type="text/html"/>
   <link href="http://dd.eionet.europa.eu/vocabulary/aq/pollutant/" hreflang="en" rel="describedby" title="AQD - AQ Sampling pollutant measured" type="text/html"/>
   <!-- self-referencing link to this feed -->
-  <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml" rel="self" type="application/atom+xml" hreflang="it" title="Il dataset stesso"/>
+  <link href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD12019.xml" rel="self" type="application/atom+xml" hreflang="it" title="Il dataset stesso"/>
   <!-- 'upward’ link to the corresponding download service feed -->
   <link href="http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml" rel="up" type="application/atom+xml" hreflang="it" title="Servizio Atom di appartenenza"/>
   <!-- identifier -->
-  <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml</id>
+  <id>https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD12019.xml</id>
   <!-- rights, access restrictions -->
   <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
   <!-- date/time this feed was last updated -->
