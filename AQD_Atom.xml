@@ -48,13 +48,13 @@
     <!-- link to dataset metadata  -->
     <link href="https://catalogosgi.isprambiente.it/geoportal2//csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=ispra_rm:001_RAQ_DataflowB_DT&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" rel="describedby" type="application/xml"/>
     <!-- download link for pre-defined dataset -->
-    <link rel="alternate" href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml" type="application/atom+xml" hreflang="it" title="Feed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
+    <link rel="alternate" href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetB2019.xml" type="application/atom+xml" hreflang="it" title="Feed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
     <!-- altri servizi API -->
      <link rel="related" href="https://sdi.isprambiente.it/geoserver/ac/zones/wfs?service=wfs&amp;version=2.0.0&amp;request=GetCapabilities" type="application/xml" title="Service implementing Direct Access operations"/>
-    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml"></link>
+    <link href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetB2019.xml"></link>
    
 	<!-- identifier for pre-defined dataset -->
-    <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml</id>
+    <id>https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetB2019.xml</id>
     <!-- last date/time pre-defined dataset was updated -->
     <updated>2022-06-010T10:31:00Z</updated>
     <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
@@ -79,12 +79,12 @@
     <!-- link to dataset metadata  -->
     <link href="https://catalogosgi.isprambiente.it/geoportal2//csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=ispra_rm:001_RAQ_DataflowD_DT&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" rel="describedby" type="application/xml"/>
     <!-- download link for pre-defined dataset -->
-    <link rel="alternate" href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml" type="application/atom+xml" hreflang="en" title="FFeed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
+    <link rel="alternate" href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD2019.xml" type="application/atom+xml" hreflang="en" title="FFeed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
     <!-- altri servizi API -->
      <link rel="related" href="http://dati.isprambiente.it/id/website/ronRmn/html" type="text/html" title="Service accesso LinkedOpenData"/>
-    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml"></link>
+    <link href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD2019.xml"></link>
 	<!-- identifier for pre-defined dataset -->
-    <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml</id>
+    <id>https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD2019.xml</id>
     <!-- last date/time pre-defined dataset was updated -->
     <updated>2022-06-010T10:32:00Z</updated>
     <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
@@ -108,12 +108,12 @@
     <!-- link to dataset metadata  -->
     <link href="https://catalogosgi.isprambiente.it/geoportal2//csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=ispra_rm:002_RAQ_DataflowD_DT&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" rel="describedby" type="application/xml"/>
     <!-- download link for pre-defined dataset -->
-    <link rel="alternate" href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml" type="application/atom+xml" hreflang="en" title="Feed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
+    <link rel="alternate" href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD12019.xml" type="application/atom+xml" hreflang="en" title="Feed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
     <!-- altri servizi API -->
      <link rel="related" href="https://sdi.isprambiente.it/geoserver/ac/stations_pollutants_v/wfs?service=wfs&amp;version=2.0.0&amp;request=GetCapabilities" type="application/xml" title="Service implementing Direct Access operations"/>
-    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml"></link>
+    <link href="https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD12019.xml"></link>
 	<!-- identifier for pre-defined dataset -->
-    <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml</id>
+    <id>https://github.com/CipoCar/Atom-service/blob/main/AC_DatasetD12019.xml</id>
     <!-- last date/time pre-defined dataset was updated -->
     <updated>2022-06-010T10:33:00Z</updated>
      <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
