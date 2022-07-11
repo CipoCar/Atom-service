@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../ATOMDataView.xsl"?>
+<!--
++ Questo è un servizio Atom Feed di ISPRA erogato dal SINA. ATTENZIONE si prega di non rimuovere  
++ il commentonecessario alla corretta visualizzazione del file nei browser. L'implementazione del 
++ servizio pre-definito di download per INSPIRE per i datasets.
++ 
++ La funzione del foglio di stile associato è quella di rendere la visualizzazione del feed nella
++ piattaforma SINA nel modo corretto.
++ 
++ Il servio di Atom e i dataset associati sono implementati in base alle linee guida tecniche 
++ di INSPIRE (Technical_Guidance_Download_Services_v3.1.pdf), per cui si prega di riferisri a tali
++ linee guida per le specifiche tecniche del servizio.
+-->
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xml:lang="en">
+  <!-- feed title -->
+  <title xml:lang="en">AC.Zone-agglomeration (AQD Dataflow B - zone e agglomerati)</title>
+  <!-- feed subtitle -->
+  <subtitle xml:lang="en">AQD Zone e agglomerati (Zones Agglomerations) Dataset B previsto dall'Art. 3 e 4 della Directiva 2004/107/EC per la valutazione e la gestione della qualità dell'Aria in Italia. 
+  Il dataset è relativo alle valutazioni dell'anno 2019.</subtitle>
+  <link href="https://inspire.ec.europa.eu/theme/ac" hreflang="en" rel="describedby" title="Condizioni atmosferiche" type="text/html"/>
+  <link href="http://dd.eionet.europa.eu/vocabulary/aq/zonetype/" hreflang="en" rel="describedby" title="AQD - AQ Assessment and Management Zone Type" type="text/html"/>
+  <!-- self-referencing link to this feed -->
+  <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml" rel="self" type="application/atom+xml" hreflang="it" title="Il dataset stesso"/>
+  <!-- 'upward’ link to the corresponding download service feed -->
+  <link href="http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml" rel="up" type="application/atom+xml" hreflang="it" title="Servizio Atom di appartenenza"/>
+  <!-- identifier -->
+  <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml</id>
+  <!-- rights, access restrictions -->
+  <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+  <!-- date/time this feed was last updated -->
+  <updated>2020-09-010</updated>
+  <!-- author contact information -->
+  <author>
+      <email>sinaservice@isprambiente.it</email>
+      <name>ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale</name>
+    </author>
+  <!-- download the pre-defined dataset in GML format -->
+  <entry>
+    <title xml:lang="it">AQD Dataset B GML, ETRS89 (INSPIRE conformant)</title>
+    <link rel="alternate" href="http://localhost/OpenData/download/AQD/AQD.zip" type="application/zip" hreflang="it" title="ZIP file con GML in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258) del Dataset B 2019"/>
+    <link href="http://localhost/OpenData/download/AQD/AQD.zip" type="application/zip"></link>
+  <id>http://localhost/OpenData/download/AQD/AQD.zip" type="application/zip</id>
+    <updated>2020-09-010</updated>
+    <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+    <summary>File GML-ZIP armonizzato secondo AQD/IJNSPIRE del Dataset B previsto dall'Art. 6 per la valutazione e la gestione della qualità dell'Aria in Italia per l'anno 2020. Il file contiene i dati del 2019.</summary>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
+  <!-- download the pre-defined dataset in geopackage format -->
+  <entry>
+    <title xml:lang="it">AQD Dataset B Geopackage, ETRS89 (INSPIRE non conformant)</title>
+    <link rel="alternate" href="http://localhost/OpenData/download/AQD/AQD.gpkg" type="application/x-gpkg" hreflang="it" title="AQD Dataset B Geopackage in ETRS89 (http://www.opengis.net/def/crs/EPSG/0/4258)(non INSPIRE conformant)"/>
+    <link href="hhttp://localhost/OpenData/download/AQD/AQD.gpkg"></link>
+  <id>http://localhost/OpenData/download/AQD/AQD.gpkg</id>
+    <updated>2020-09-010</updated>
+    <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+      <summary>File Geopackage non armonizzato del Dataset B previsto dall'Art. 6 per la valutazione e la gestione della qualità dell'Aria in Italia per l'anno 2020. Il file contiene i dati del 2019.</summary>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
+</feed>
+ 
