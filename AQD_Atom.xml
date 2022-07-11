@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../ATOMSrvView.xsl"?>
+<!--
++ Questo è un servizio Atom Feed di ISPRA erogato dal SINA. ATTENZIONE si prega di non rimuovere  
++ il commentonecessario alla corretta visualizzazione del file nei browser. L'implementazione del 
++ servizio pre-definito di download per INSPIRE per i datasets.
++ 
++ La funzione del foglio di stile associato è quella di rendere la visualizzazione del feed nella
++ piattaforma SINA nel modo corretto.
++ 
++ Il servio di Atom e i dataset associati sono implementati in base alle linee guida tecniche 
++ di INSPIRE (Technical_Guidance_Download_Services_v3.1.pdf), per cui si prega di riferisri a tali
++ linee guida per le specifiche tecniche del servizio.
+-->
+
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:inspire_dls="http://inspire.ec.europa.eu/schemas/inspire_dls/1.0" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xml:lang="it">
+  <!-- feed title -->
+  <title xml:lang="it">Servizio di Download Atom della Qualità dell'Aria</title>
+  <!-- feed subtitle -->
+  <subtitle xml:lang="it">Selezione dei dataset geografici presenti nel flusso AQD prodotto per il eReporting della Qualità dell'Aria in Italia</subtitle>
+  <!-- links to metadata and alternative representations -->
+  <link href="https://catalogosgi.isprambiente.it/geoportal2/rest/document?id=ispra_rm%3A001_RAQ_Dataflow_SVD" rel="describedby" type="application/vnd.ogc.csw.GetRecordByIdResponse_xml"/>
+  <!-- selflink to this document -->
+  <link href="http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml" rel="self" type="application/atom+xml" hreflang="it" title="Documento stesso"/>
+  <!-- links to the open search interface description of this download service -->
+  <link href="https://catalogosgi.isprambiente.it/geoportal2/rest/find/document?searchText=Qualit%C3%A0%20dell%27Aria%20-%20Download&amp;max=1&amp;f=xml" rel="search" type="application/opensearchdescription+xml" hreflang="en" title="Open Search interface description of the ISPRA download service"/>
+  <!-- identifier -->
+  <id>http://localhost/OpenData/atom/inspire/service/AQD_Atom.xml</id>
+  <!-- rights, access restrictions -->
+  <rights>CC-BY 4.0</rights>
+  <!-- date/time of last update of feed-->
+  <updated>2022-06-010T10:30:00Z</updated>
+  <!-- author info -->
+  <author>
+  <email>metadatainfo@isprambiente.it</email>
+  <name>ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale</name>
+  <uri>https://geoportale.isprambiente.it</uri>
+</author>
+<icon>http://localhost/OpenData/img/logosina.png</icon>
+<logo>http://localhost/OpenData/img/logosina.png</logo>
+    <!-- pre-defined dataset -->
+  <entry>
+    <!-- title for pre-defined dataset -->
+    <title xml:lang="it">Zone e agglomerati (AQD Zone and agglomeration dataflow B)</title>
+    <!--Spatial Dataset Unique Resourse Identifier for this dataset-->
+    <inspire_dls:spatial_dataset_identifier_code>ispra_rm:IT-AQDatasetB-2020</inspire_dls:spatial_dataset_identifier_code>
+    <inspire_dls:spatial_dataset_identifier_namespace>https://geoportale.isprambiente.it/</inspire_dls:spatial_dataset_identifier_namespace>
+    <!-- link to dataset metadata  -->
+    <link href="https://catalogosgi.isprambiente.it/geoportal2//csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=ispra_rm:001_RAQ_DataflowB_DT&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" rel="describedby" type="application/xml"/>
+    <!-- download link for pre-defined dataset -->
+    <link rel="alternate" href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml" type="application/atom+xml" hreflang="it" title="Feed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
+    <!-- altri servizi API -->
+     <link rel="related" href="https://sdi.isprambiente.it/geoserver/ac/zones/wfs?service=wfs&amp;version=2.0.0&amp;request=GetCapabilities" type="application/xml" title="Service implementing Direct Access operations"/>
+    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml"></link>
+   
+	<!-- identifier for pre-defined dataset -->
+    <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetB2019.xml</id>
+    <!-- last date/time pre-defined dataset was updated -->
+    <updated>2022-06-010T10:31:00Z</updated>
+    <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+    <author>
+      <email>sinaservice@isprambiente.it</email>
+      <name>ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale</name>
+    </author>
+    <summary type="html"><![CDATA[<div>Dataset B previsto dall'Art. 6 per la valutazione e la gestione della qualità dell'Aria in Italia. Il dataset rappresenta la delimitazione e il tipo di zone e agglomerati stabiliti a norma dell'articolo 3 della Direttiva 2004/107/CE e dell'articolo 4 della Direttiva 2008/50/CE ed è relativo alle valutazioni per l'anno 2020.
+    La consultazione dei dati in tempo reale è possibile attraverso <a href="https://sinacloud.isprambiente.it/portal/apps/experiencebuilder/experience/?draft=true&amp;id=df677d20871d4383b34ce355e24f0598&amp;page=page_71" target="_blank">la specifica piattaforma Web</a></div>]]></summary>
+    <!-- optional GeoRSS-Simple bounding box of the pre-defined dataset. Must be lat lon -->
+    <georss:polygon>47.1463 6.5147 47.1463 18.6326 35.4456 18.6326 35.4456 6.5147 47.1463 6.5147</georss:polygon>
+    <!-- INSPIRE Spatial Object Types contained in the pre-defined dataset -->
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
+  <!-- pre-defined dataset -->
+  <entry>
+    <!-- title for pre-defined dataset -->
+    <title xml:lang="it">Stazioni di monitoraggio (AQD Monitoring Stations dataflow D)</title>
+    <!--Spatial Dataset Unique Resourse Identifier for this dataset-->
+    <inspire_dls:spatial_dataset_identifier_code>ispra_rm:IT-AQDatasetD_01</inspire_dls:spatial_dataset_identifier_code>
+    <inspire_dls:spatial_dataset_identifier_namespace>https://geoportale.isprambiente.it/</inspire_dls:spatial_dataset_identifier_namespace>
+    <!-- link to dataset metadata  -->
+    <link href="https://catalogosgi.isprambiente.it/geoportal2//csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=ispra_rm:001_RAQ_DataflowD_DT&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" rel="describedby" type="application/xml"/>
+    <!-- download link for pre-defined dataset -->
+    <link rel="alternate" href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml" type="application/atom+xml" hreflang="en" title="FFeed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
+    <!-- altri servizi API -->
+     <link rel="related" href="http://dati.isprambiente.it/id/website/ronRmn/html" type="text/html" title="Service accesso LinkedOpenData"/>
+    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml"></link>
+	<!-- identifier for pre-defined dataset -->
+    <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD2019.xml</id>
+    <!-- last date/time pre-defined dataset was updated -->
+    <updated>2022-06-010T10:32:00Z</updated>
+    <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+    <author>
+      <email>sinaservice@isprambiente.it</email>
+      <name>ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale</name>
+    </author>
+    <summary type="html"><![CDATA[<div>Dataset D previsto dagli Art. 8 e 9 per Informazioni sulle modalità di valutazione e per le misurazioni fisse e indicative della qualità dell'Aria in Italia. Il dataset rappresenta le stazioni di monitoraggio nazionali per la Direttiva 2008/50/CE ed è relativo alle valutazioni per l'anno 2020.La consultazione dei dati in tempo reale è possibile attraverso <a href="https://sinacloud.isprambiente.it/portal/apps/experiencebuilder/experience/?draft=true&amp;id=df677d20871d4383b34ce355e24f0598&amp;page=page_71" target="_blank">la specifica piattaforma Web</a></div>]]></summary>
+    <!-- optional GeoRSS-Simple bounding box of the pre-defined dataset. Must be lat lon -->
+    <georss:polygon>47.1463 6.5147 47.1463 18.6326 35.4456 18.6326 35.4456 6.5147 47.1463 6.5147</georss:polygon>
+    <!-- INSPIRE Spatial Object Types contained in the pre-defined dataset -->
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
+  <!-- pre-defined dataset -->
+  <entry>
+    <!-- title for pre-defined dataset -->
+    <title xml:lang="it">Campioni inquinanti (Pollutant Samplepoint datalow D1)</title>
+    <!--Spatial Dataset Unique Resourse Identifier for this dataset-->
+    <inspire_dls:spatial_dataset_identifier_code>ispra_rm:IT-AQDatasetD_02</inspire_dls:spatial_dataset_identifier_code>
+    <inspire_dls:spatial_dataset_identifier_namespace>https://geoportale.isprambiente.it/</inspire_dls:spatial_dataset_identifier_namespace>
+    <!-- link to dataset metadata  -->
+    <link href="https://catalogosgi.isprambiente.it/geoportal2//csw?Service=CSW&amp;Request=GetRecordById&amp;Version=2.0.2&amp;id=ispra_rm:002_RAQ_DataflowD_DT&amp;outputSchema=http://www.isotc211.org/2005/gmd&amp;elementSetName=full" rel="describedby" type="application/xml"/>
+    <!-- download link for pre-defined dataset -->
+    <link rel="alternate" href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml" type="application/atom+xml" hreflang="en" title="Feed contenete il dataset pre-definito in CRS ETRS98 (http://www.opengis.net/def/crs/EPSG/0/4258)"/>
+    <!-- altri servizi API -->
+     <link rel="related" href="https://sdi.isprambiente.it/geoserver/ac/stations_pollutants_v/wfs?service=wfs&amp;version=2.0.0&amp;request=GetCapabilities" type="application/xml" title="Service implementing Direct Access operations"/>
+    <link href="http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml"></link>
+	<!-- identifier for pre-defined dataset -->
+    <id>http://localhost/OpenData/atom/inspire/dataset/AC_DatasetD12019.xml</id>
+    <!-- last date/time pre-defined dataset was updated -->
+    <updated>2022-06-010T10:33:00Z</updated>
+     <rights>https://creativecommons.org/licenses/by/4.0/deed.it</rights>
+    <author>
+      <email>sinaservice@isprambiente.it</email>
+      <name>ISPRA - Istituto Superiore per la Protezione e la Ricerca Ambientale</name>
+    </author>
+    <summary type="html"><![CDATA[<div>Dataset D previsto dagli Art. 8 e 9 per Informazioni sulle modalità di valutazione e per le misurazioni fisse e indicative della qualità dell'Aria in Italia. Il dataset rappresenta i campioni inquinanti assiciati alle stazioni di monitoraggio nazionali per la Direttiva 2008/50/CE ed è relativo alle valutazioni per l'anno 2020.La consultazione dei dati in tempo reale è possibile attraverso <a href="https://sinacloud.isprambiente.it/portal/apps/experiencebuilder/experience/?draft=true&amp;id=df677d20871d4383b34ce355e24f0598&amp;page=page_71" target="_blank">la specifica piattaforma Web</a></div>]]></summary>
+    <!-- optional GeoRSS-Simple bounding box of the pre-defined dataset. Must be lat lon -->
+    <georss:polygon>47.1463 6.5147 47.1463 18.6326 35.4456 18.6326 35.4456 6.5147 47.1463 6.5147</georss:polygon>
+    <!-- INSPIRE Spatial Object Types contained in the pre-defined dataset -->
+    <category term="http://www.opengis.net/def/crs/EPSG/0/4258" label="ETRS89"/>
+  </entry>
+  
+</feed>
