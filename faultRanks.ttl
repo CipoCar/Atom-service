@@ -1,0 +1,108 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcatapit: <http://dati.gov.it/onto/dcatapit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix ndc: <https://w3id.org/italia/onto/NDC/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix org: <http://www.w3.orgS/ns/org#> .
+@prefix top: <https://w3id.org/italia/env/onto/top/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://w3id.org/italia/env/vocab/faults/faultRanks> a skos:ConceptScheme, 
+                                                        dcatapit:Dataset,
+                                                        adms:Asset, 
+                                                        dcat:Dataset;
+  dcterms:title "Vocabulary of fault ranks."@en, "Vocabolario dei ranghi della faglia."@it;
+  dcterms:description "Terms describing the hierarchization (rank) of faults."@en, "Termini che descrivono la gerarchizzazione (rango) delle faglie."@it;
+  dcterms:issued "2024-05-29"^^xsd:date;
+  dcterms:modified "2024-05-29"^^xsd:date;
+  dcterms:creator <https://w3id.org/italia/env/ld/common/organisation/012-Un>;
+  dcterms:rightsHolder <https://w3id.org/italia/env/ld/common/organisation/001>;
+  dcterms:identifier "https://w3id.org/italia/env/vocab/faults/faultRanks";
+  owl:versionInfo "1.0";
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ITA>,
+    <http://publications.europa.eu/resource/authority/language/ENG>;
+  dcat:theme <https://inspire.ec.europa.eu/theme/ge>, <https://inspire.ec.europa.eu/theme/nz>;
+  dcat:keyword "Geologia strutturale"@it, 
+               "GeoSciencesIR"@en, 
+               "Tettonica"@it, 
+               "Cartografia"@it,
+               "Geologia"@it, 
+               "Tectonics"@en, 
+               "Ranks"@en;
+  dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/IRREG>;
+  dcat:distribution <https://w3id.org/italia/env/ld/common/distribution/faults-faultRanks-RDF-TURTLE>;
+  dcterms:type <http://purl.org/adms/assettype/http://purl.org/adms/assettype/CodeList>;
+  dcat:contactPoint <https://w3id.org/italia/env/ld/common/organisation/012-Un>;
+  xkos:numberOfLevels "1";
+  ndc:keyConcept "faultRanks";
+  dcterms:conformsTo <https://w3id.org/italia/data/standard/SKOS>;
+  adms:representationTechnique <http://purl.org/adms/representationtechnique/SKOS>;
+  dc:creator "Annamaria Blumetti (ORCID: 0000-0002-5331-9379)", 
+             "Pio Di Manna (ORCID: 0000-0003-3486-5136)",
+             "Valerio Comerci (ORCID: 0000-0002-1022-9488)",
+             "Deborah Maceroni", 
+             "Livio Bonadeo",
+             "Giuseppe Castorina (ORCID: 0000-0003-1646-3010)", 
+             "Mariapia Congi (ORCID: 0000-0002-9330-9554)",
+             "Carlo Cipolloni (ORCID: 0000-0001-7652-9814)", 
+             "Elio Giulianelli (ORCID: 0000-0003-0998-9751)";
+  rdfs:comment "standardizzazione dei termini e dei parametri utilizzati nelle codelist durante il processo di implementazione del database delle faglie capaci e dei siti paleosismologici";
+  dcterms:publisher <https://w3id.org/italia/env/ld/common/organisation/001>;
+  rdfs:label "Vocabolario dei ranghi della faglia."@it, "Vocabulary of fault ranks."@en;
+  skos:hasTopConcept <https://w3id.org/italia/env/vocab/faults/faultRanks/primaryFault>,
+                     <https://w3id.org/italia/env/vocab/faults/faultRanks/secondaryFault> .
+
+<https://w3id.org/italia/env/ld/common/organisation/001> a owl:NamedIndividual, 
+                                                           dcat:Agent,
+                                                           vcard:Organization, 
+                                                           org:Organization, 
+                                                           foaf:Agent, 
+                                                           top:Organisation;
+  dcterms:identifier "ispra_rm";
+  foaf:name "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it;
+  vcard:fn "Istituto Superiore per la Protezione e la Ricerca Ambientale"@it .
+
+<https://w3id.org/italia/env/ld/common/distribution/faults-faultRanks-RDF-TURTLE>
+  a dcat:Distribution, dcatapit:Distribution;
+  dcterms:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+  dcterms:license <https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40>;
+  dcterms:title "Distribuzione RDF/Turtle del vocabolario controllato GeoSciencesIR per la cinematica della faglia"@it,
+    "RDF/Turtle distribution of the controlled vocabulary within GeoSciencsIR for fault kinematics"@en;
+  dcterms:description "Questa è la distribuzione RDF/Turtle del vocabolario controllato sviluppato nell'ambito di GeoSciencesIR per le evidenze superficiali delle faglie"@it,
+    "This is RDF/Turtle distribution of controlled vocabulary developed within GeoSciencesIR for the fault surface evidences"@en;
+  dcat:accessURL <https://github.com/isprambiente/dati-semantic/tree/main/assets/controlled-vocabularies/faults/faultRanks>;
+  dcat:downloadURL <https://raw.githubusercontent.com/isprambiente/dati-semantic/main/assets/controlled-vocabularies/faults/faultRanksfaultRanks.ttl> .
+
+<https://w3id.org/italia/env/ld/common/organization/012-Un> a owl:NamedIndividual,
+                                                              dcatapit:Organization, 
+                                                              vcard:Kind, 
+                                                              vcard:Organization;
+  vcard:fn "Unità 12 del progetto GeoSciencesIR (Research Infrastructure)"@it, "GeoSciencesIR (Research Infrastructure) project Unit 12"@en .
+
+<https://w3id.org/italia/env/vocab/faults/faultRanks/primaryFault> a skos:Concept;
+  skos:definition "Fault that generally represents the surface expression of a seismogenic source along which greater rupture lengths and displacements are expected. In plan, it represents the surface emergence of the deep main fault plane; it may be composed of a single trace, but more often of a series of directly interconnected segments, which tend to rupture at the same time or at short intervals. In many cases, but not necessarily, it corresponds to the tectonic structure that controls recent geomorphological evolution in the area of interest. A primary capable fault is characterised by greater morphological evidence within a geological-structural system, on which aseismic movements may also occur."@en,
+    "Faglia che generalmente rappresenta l'espressione superficiale di una sorgente sismogenetica lungo la quale si prevedono lunghezze di rottura e spostamenti maggiori. In pianta, rappresenta l'emergenza superficiale del piano di faglia principale profondo; può essere composta da un'unica traccia, ma più spesso da una serie di segmenti direttamente interconnessi, che tendono a rompersi contemporaneamente o a brevi intervalli. In molti casi, ma non necessariamente, corrisponde alla struttura tettonica che controlla l'evoluzione geomorfologica recente nell'area di interesse. Una faglia capace primaria è caratterizzata da una maggiore evidenza morfologica all'interno di un sistema geologico-strutturale, sul quale possono verificarsi anche movimenti asismici."@it;
+  skos:prefLabel "Faglia primaria"@it, "Primary fault"@en;
+  skos:altLabel "Faglia di generazione primaria"@it;
+  skos:notation "1.0";
+  skos:topConceptOf <https://w3id.org/italia/env/vocab/faults/faultRanks>;
+  skos:inScheme <https://w3id.org/italia/env/vocab/faults/faultRanks>;
+  dcterms:bibliographicCitation "Definition provided by ITHACA Working Group - ISPRA 2024." .
+
+<https://w3id.org/italia/env/vocab/faults/faultRanks/secondaryFault> a skos:Concept;
+  skos:definition "Fault whose activity depends on the movements of the primary fault. That is, it is structurally connected to the primary fault, on the surface and/or in depth, i.e. as a synthetic or antithetic splay, but it cannot be expected to be reactivated independently of the primary fault system in the area of interest. In the case of coseismic reactivation, it has generally smaller ruptures than the primary fault."@en,
+    "Faglia la cui attività dipende dai movimenti della faglia primaria. Cioè, è strutturalmente connessa alla faglia primaria, in superficie e/o in profondità, cioè come splay sintetico o antitetico, ma non ci si può aspettare che si riattivi indipendentemente dal sistema di faglie primarie nell'area di interesse. In caso di riattivazione coseismica, presenta in genere rotture più piccole rispetto alla faglia primaria."@it;
+  skos:prefLabel "Faglia secondaria"@it, "Secondary fault"@en;
+  skos:altLabel "Faglia di generazione secondaria"@it;
+  skos:notation "2.0";
+  skos:topConceptOf <https://w3id.org/italia/env/vocab/faults/faultRanks>;
+  skos:inScheme <https://w3id.org/italia/env/vocab/faults/faultRanks>;
+  dcterms:bibliographicCitation "Definition provided by ITHACA Working Group - ISPRA 2024." .
